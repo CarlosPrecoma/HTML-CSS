@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(5, 46, 5);
+    text-align: center;
+}
+h1{
+    color: lightgreen;
+}
+p{
+    color: mediumspringgreen;
+}
