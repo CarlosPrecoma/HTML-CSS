@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+            position: relative;
+
+        }
+        td.numero {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(38, 36, 36);    
+           }
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(228, 228, 117, 0.668);/*tambem tbody > tr:nth-child(2n-1)*/
+        }
+        tbody > tr:nth-child(even) {
+            background-color: rgba(144, 238, 144, 0.561);/*tambem tbody > tr:nth-child(2n)*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION
+        THEAD
+            TR TD TH
+        TBODY
+            TR TD TH
+        TFOOT
+            TR TD TH
+    -->
+    <table>
+        <CAption>População das Unidades Federativas</CAption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+        </thead>
+        <tbody>
+           <tr>
+            <td>São Paulo</td>
+            <td class="numero">45 949 049</td>
+           </tr>
+           <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">21 875 952</td>
+           </tr>
+           <tr>
+            <td>Rio de Janeiro</td>
+            <td class="numero">17 856 521</td>
+           </tr>
+           <tr>
+            <td>Bahia</td>
+            <td class="numero">14 873 074</td>
+           </tr>
+           <tr>
+            <td>Paraná</td>
+            <td class="numero">11 433 957</td>
+           </tr>
+           <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">11 377 239</td>
+           </tr>
+           <tr>
+            <td>Pernambuco</td>
+            <td class="numero">9 537 071</td>
+           </tr>
+           <tr>
+            <td>Ceara</td>
+            <td class="numero">9 132 078</td>
+           </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>145 524 142</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores voluptatum quibusdam dicta, architecto provident repellat inventore, modi qui, harum dolorem. Laboriosam, deserunt molestias at consequatur natus excepturi quasi officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci accusantium debitis placeat illo, tempore modi dolor atque corporis sint unde, id deleniti eligendi aspernatur quis rerum eos pariatur eaque nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut doloremque eius porro obcaecati, veniam cupiditate excepturi dignissimos optio officiis repudiandae velit ut modi doloribus voluptas harum delectus ad aperiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde est maxime perspiciatis incidunt similique dignissimos fugit esse, nihil aut ex nemo? Laudantium libero corporis consequuntur eligendi voluptatum voluptas eaque veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores voluptatum quibusdam dicta, architecto provident repellat inventore, modi qui, harum dolorem. Laboriosam, deserunt molestias at consequatur natus excepturi quasi officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci accusantium debitis placeat illo, tempore modi dolor atque corporis sint unde, id deleniti eligendi aspernatur quis rerum eos pariatur eaque nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut doloremque eius porro obcaecati, veniam cupiditate excepturi dignissimos optio officiis repudiandae velit ut modi doloribus voluptas harum delectus ad aperiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde est maxime perspiciatis incidunt similique dignissimos fugit esse, nihil aut ex nemo? Laudantium libero corporis consequuntur elLorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores voluptatum quibusdam dicta, architecto provident repellat inventore, modi qui, harum dolorem. Laboriosam, deserunt molestias at consequatur natus excepturi quasi officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci accusantium debitis placeat illo, tempore modi dolor atque corporis sint unde, id deleniti eligendi aspernatur quis rerum eos pariatur eaque nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut doloremque eius porro obcaecati, veniam cupiditate excepturi dignissimos optio officiis repudiandae velit ut modi doloribus voluptas harum delectus ad aperiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde est maxime perspiciatis incidunt similique dignissimos fugit esse, nihil aut ex nemo? Laudantium libero corporis consequuntur el lo.</p>
+</body>
+</html>
